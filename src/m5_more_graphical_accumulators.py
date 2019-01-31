@@ -229,7 +229,7 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
 
     for k in range(0, m):
         circle1 = rg.Circle(rg.Point(cx - r1 / 2 - r2 / 2 - r1 * k, cy), r1 / 2)
-        circle1.fill_color = info["fill"]
+        circle1.fill_color = rectangle.fill_color
         circle1.outline_color = info["outline"]
         circle1.outline_thickness = info["width"]
         circle1.attach_to(window)
